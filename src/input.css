@@ -1,15 +1,18 @@
 @import "tailwindcss";
 
 .page {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     animation: intro 500ms ease-in;
+    padding-bottom: 4rem;
 }
 
 body {
+    width: 100vw;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 @keyframes intro {

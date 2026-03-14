@@ -42,8 +42,52 @@ function App() {
       </section>
 
       <section className="hero flex flex-col gap-3 items-start">
-        <h2 className="text-2xl font-medium">Podział zadań</h2>
-        <ul className="text-lg font-regular text-gray-900 list-disc"></ul>
+        <h2 className="text-2xl font-medium mb-3">Podział zadań</h2>
+
+        <div className="p-8 rounded-md border shadow-md border-gray-600/25 w-full">
+          <h3 className="text-xl font-medium">Krystian Zieja:</h3>
+
+          <ul className="text-lg font-regular text-gray-900 list-disc mt-6">
+            <li className="ml-8">Napisanie apki mobilnej</li>
+            <li className="ml-8">API</li>
+          </ul>
+        </div>
+
+        <div className="p-8 rounded-md border shadow-md border-gray-600/25 w-full">
+          <h3 className="text-xl font-medium">Maciej Majerczyk:</h3>
+
+          <ul className="text-lg font-regular text-gray-900 list-disc mt-6">
+            <li className="ml-8">Złożenie fizyczne projektu</li>
+            <li className="ml-8">Programowanie mikrokontrolerów</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="hero flex flex-col gap-3 items-start">
+        <h2 className="text-2xl font-medium mb-3">Stack technologiczny</h2>
+
+        <div className="p-8 rounded-md border shadow-md border-gray-600/25 w-full">
+          <h3 className="text-xl font-medium">Aplikacja API</h3>
+
+          <ul className="text-lg font-regular text-gray-900 list-disc mt-6">
+            <li className="ml-8">
+              Bun.js - środowisko uruchomieniowe Javascript
+            </li>
+            <li className="ml-8">
+              Express.js - framework do aplikacji backendowych
+            </li>
+            <li className="ml-8">PostreSQL - baza danych</li>
+            <li className="ml-8">Docker</li>
+          </ul>
+        </div>
+
+        <div className="p-8 rounded-md border shadow-md border-gray-600/25 w-full">
+          <h3 className="text-xl font-medium">Aplikacja Mobilna (Android)</h3>
+
+          <ul className="text-lg font-regular text-gray-900 list-disc mt-6">
+            <li className="ml-8">Kotlin</li>
+          </ul>
+        </div>
       </section>
     </div>
   );
