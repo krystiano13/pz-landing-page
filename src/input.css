@@ -3,7 +3,6 @@
 .page {
     width: 100%;
     min-height: 100vh;
-    animation: intro 500ms ease-in;
     padding-bottom: 4rem;
 }
 

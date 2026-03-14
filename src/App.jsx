@@ -1,6 +1,14 @@
+import { useEffect } from "react";
 import "./output.css";
 
+import "aos/dist/aos.css";
+import Aos from "aos";
+
 function App() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div className="page px-[4rem] sm:px-[24rem] pt-[3rem] flex flex-col gap-12">
       <section className="hero flex flex-col gap-3 items-start">
@@ -41,7 +49,10 @@ function App() {
         </ul>
       </section>
 
-      <section className="hero flex flex-col gap-3 items-start">
+      <section
+        data-aos="fade-up"
+        className="hero flex flex-col gap-3 items-start"
+      >
         <h2 className="text-2xl font-medium mb-3">Podział zadań</h2>
 
         <div className="p-8 rounded-md border shadow-md border-gray-600/25 w-full">
@@ -63,7 +74,10 @@ function App() {
         </div>
       </section>
 
-      <section className="hero flex flex-col gap-3 items-start">
+      <section
+        data-aos="fade-up"
+        className="hero flex flex-col gap-3 items-start"
+      >
         <h2 className="text-2xl font-medium mb-3">Stack technologiczny</h2>
 
         <div className="p-8 rounded-md border shadow-md border-gray-600/25 w-full">
