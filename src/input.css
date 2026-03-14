@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+.page {
+    width: 100vw;
+    min-height: 100vh;
+    animation: intro 500ms ease-in;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes intro {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

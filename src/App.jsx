@@ -1,121 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import "./output.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+    <div className="page px-[4rem] sm:px-[24rem] pt-[3rem] flex flex-col gap-12">
+      <section className="hero flex flex-col gap-3 items-start">
+        <h1 className="text-4xl font-medium">Projekt Zespołowy</h1>
+        <h2 className="text-xl font-regular">
+          Proste, wieloczujnikowe urządzenie smart home zbudowane w oparciu o
+          Arduino i interfejs w postaci aplikacji mobilnej
+        </h2>
+        <p className="text-lg font-regular text-gray-700">
+          Krystian Zieja | Maciej Majerczyk
+        </p>
       </section>
 
-      <div className="ticks"></div>
+      <hr style={{ opacity: 0.25 }} />
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
+      <section className="hero flex flex-col gap-3 items-start">
+        <h2 className="text-2xl font-medium">Założenia projektu</h2>
+        <p className="text-lg font-regular text-gray-900">
+          Nasze urządzenie typu SmartHome będzie mierzył temperaturę, wilgotność
+          powietrza, tlenek węgla, to czy są opady na zewnątrz oraz monitorował
+          ruch przy drzwiach, a następnie zapisywał w bazie danych którą będzie
+          można przeglądać w aplikacji mobilnej.
+        </p>
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+      <section className="hero flex flex-col gap-3 items-start">
+        <h2 className="text-2xl font-medium">Elementy (części)</h2>
+        <ul className="text-lg font-regular text-gray-900 list-disc">
+          <li className="ml-8">ESP32 WiFi + BT 4.2</li>
+          <li className="ml-8">Czujnik tlenku węgla MQ-9</li>
+          <li className="ml-8">Czujnik ruchu PIR HC-SR501</li>
+          <li className="ml-8">
+            Czujnik temperatury i wilgotności powietrza DHT11
+          </li>
+          <li className="ml-8">Czujnik opadów YL-83</li>
+          <li className="ml-8">Wyświetlacz LCD 2x16 LCD-03335</li>
+          <li className="ml-8">Płytka stykowa</li>
+        </ul>
+      </section>
+
+      <section className="hero flex flex-col gap-3 items-start">
+        <h2 className="text-2xl font-medium">Podział zadań</h2>
+        <ul className="text-lg font-regular text-gray-900 list-disc"></ul>
+      </section>
+    </div>
+  );
 }
 
-export default App
+export default App;
