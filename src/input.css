@@ -1,9 +1,16 @@
 @import "tailwindcss";
 
+*,
+html {
+    scroll-behavior: smooth !important;
+    scrollbar-width: thin;
+}
+
 .page {
     width: 100%;
     min-height: 100vh;
     padding-bottom: 4rem;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +19,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 @keyframes intro {
